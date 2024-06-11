@@ -3,11 +3,11 @@ require_once 'vendor/autoload.php';
 
 class Wallet extends Api
 {
-    private float $money;
+    private int $money;
     private array $transactions;
     private array $owned;
 
-    public function __construct(string $api, string $url, float $money, array $transactions = [], array $owned = [])
+    public function __construct(string $api, string $url, int $money, array $transactions = [], array $owned = [])
     {
         parent::__construct($api, $url);
         $this->money = $money;
