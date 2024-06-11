@@ -43,7 +43,7 @@ class Wallet extends Api
                     return;
                 }
                 $this->money -= $userAmount;
-                echo "Your purchased $totalCrypto $item->name for $$userAmount." . PHP_EOL;
+                echo "You purchased $totalCrypto $item->name for $$userAmount." . PHP_EOL;
                 $this->owned($item->name, $totalCrypto);
                 $this->transaction("Purchased", $item->name, $userAmount, $totalCrypto);
                 return;
